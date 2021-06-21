@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+<HTML>
+   <HEAD>
+      <TITLE>
+        Parallelogram Area Calculator
+      </TITLE>
+   </HEAD>
+<BODY>
+<!-- End tab title -->
+
+<h1> Parallelogram Area Calculator</h1>
+
+<img src="Parallelogram Area.png" alt="Parallelogram" width ="390" height="168">
+
+<div>Enter the length of the base here:<input type="text" id="base"></div>
+
+<div>Enter the height here:<input type="text" id="height"></div>
+
+
+<br>
+
+<button onclick="CheckAnswer()">Calculate Area</button>
+
+
+<p> The area of the parallelogram in square units is: </p>
+
+<div id="DisplayAnswer"></div>
+
+<script>
+
+function CheckAnswer() {
+
+	
+    var base = document.getElementById("base").value;
+	
+	var height = document.getElementById("height").value;
+	
+	var Area;
+	
+	Area = 1*base*height;
+	
+	document.getElementById("DisplayAnswer").innerHTML = Area;
+	}
+</script>
+
+
+
+</BODY>
+
+
+</HTML>
